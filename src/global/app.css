@@ -1,0 +1,92 @@
+/* Document Level Styles */
+
+/*
+  The imports below are needed to include our light dom css for global styles such as fonts and colors.
+  You can comment out any of these imports if you do not need that css. For example, if you have your own
+  global font family css then you can comment out the typography.css import.
+*/
+
+/** Core CSS required for ionic components to work property */
+@import "~@ionic/core/css/core.css";
+
+/** Basic CSS for apps built with Ionic */
+@import "~@ionic/core/css/normalize.css";
+@import "~@ionic/core/css/structure.css";
+@import "~@ionic/core/css/typography.css";
+
+/** Optional CSS utils that can be commented out */
+@import "~@ionic/core/css/padding.css";
+@import "~@ionic/core/css/float-elements.css";
+@import "~@ionic/core/css/text-alignment.css";
+@import "~@ionic/core/css/text-transformation.css";
+@import "~@ionic/core/css/flex-utils.css";
+
+/*
+  The CSS Variables below can be used to theme your app.
+  For more info on CSS variables check out:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+
+  More info about color theming using Ionic:
+  https://ionicframework.com/docs/theming/color-generator
+*/
+
+:root {
+  --ion-color-primary: #5751ff;
+  --ion-color-primary-rgb: 87,81,255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #4d47e0;
+  --ion-color-primary-tint: #6862ff;
+}
+
+.flex-vh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 90%;
+}
+
+.flex-h {
+  display: flex;
+  justify-content: center;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.max-560 {
+  max-width: 560px;
+}
+
+.light-text {
+  font-size: 0.7em;
+  color: #646363;
+}
+
+.logo {
+  max-width: 280px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.logo-small {
+  max-width: 110px;
+}
+ion-split-pane {
+  --side-width: 100px;
+}
+
+ion-spinner {
+  display: block;
+  margin: 0 auto;
+}
